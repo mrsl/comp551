@@ -164,16 +164,13 @@ void self_stabilizing_tree(void* parameters)
 				if(parentNbrList.nbrs[i]->ID == rootID)
 				{
 					index = i;
+					nav = FALSE;
 				}
 			}
 
 			if(size > 0)
 			{
 				behMoveToNbr(&behOutput, parentNbrList.nbrs[index] , MOTION_TV);
-				if(index != 0)
-				{
-					nav = FALSE;
-				}
 			}
 		}
 		neighborsPutMutex();
