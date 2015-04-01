@@ -1,0 +1,6 @@
+tree_navigation.c is a crude implementation of the PS03 tree navigation algorithm.
+It initializes the neighbor system and uses the broadcastMsgUpdateLeaderElection function to find the root node.
+The robot indicates the number of hops away from the root it is by illuminating the leds.
+All of the leds flash in a circular pattern if a robot is the root.
+By pushing the blue led button, the robot will navigate to the root node using the behMoveToNbr function.
+The movement is not perfect so the robot may stop prematurely or run into the root node. 
